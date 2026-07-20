@@ -1,0 +1,14 @@
+# Copy to agents.yaml and adjust paths for your machine.
+# L0: each entry is an ACP agent launched as a subprocess (stdio).
+
+agents:
+  - id: example
+    title: Example ACP Agent
+    command: npx
+    args: ["tsx", "fixtures/fake-agent.ts"]
+    env: {}
+    labels: [dev, fixture]
+
+server:
+  host: 127.0.0.1
+  port: 8787
